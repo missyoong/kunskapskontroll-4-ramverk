@@ -10,21 +10,17 @@ function ProductPage() {
   const [cart, setCart] = useRecoilState(cartState);
   const [cartBtn, setCartBtn] = useState("Add to Cart");
 
-  // sätt amount i inputfält (antal produkter)
   const [amount, setAmount] = useState(0);
 
   const productid = useParams();
 
-  // Alternativ till att hämta enskild produkt
-  // Hämta enskild produkt från Products till "ProductDetail".
+  
   const productDetail2 = product.find((product) => product.id === productid.id);
 
   console.log(productDetail2);
 
-  // parseInt konverterar till number
-  // product.id === productid.id -> false
+  
   const productDetail = product.filter((x) => x.id === parseInt(productid.id));
-  //const product = productDetail[0];
   console.log(product);
   console.log(productDetail);
 
@@ -52,14 +48,7 @@ function ProductPage() {
 
   console.log(cart);
 
-  /*
-
-  function addToCart(product) {
-    const newCart = [...cart, product];
-    setCart(newCart);
-  }
-
-  */
+ 
 
   return (
     <div className="container my-5 py-3">
