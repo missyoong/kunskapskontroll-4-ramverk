@@ -28,7 +28,6 @@ function Profile() {
           <h6 className="my-4">
             Firstname: {userData.user.name.firstname}
             <h6 className="my-4">Lastname: {userData.user.name.lastname} </h6>
-            <h6 className="my-4">Firstname: {userData.user.name.firstname} </h6>
             <h6 className="my-4">Street: {userData.user.address.street} </h6>
             <h6 className="my-4">City: {userData.user.address.city} </h6>
           </h6>
