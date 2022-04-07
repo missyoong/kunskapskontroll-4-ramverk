@@ -78,9 +78,3 @@ function LoginPage() {
 }
 export default LoginPage;
 
-
-
-// Skapa input för login med username och password
-// skapa 2st useState en för password och andra för username
-// skapa button för login och sätta onClick på button,
-// login funktion körs med username och password från useState som vi har skapat
