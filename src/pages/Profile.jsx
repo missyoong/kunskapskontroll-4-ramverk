@@ -10,9 +10,7 @@ function Profile() {
   const userData = useRecoilValue(authState);
   const reset = useResetRecoilState(authState);
 
-  //console.log(userData.user.name);
-  //console.log(userData.user.address);
-  //console.log(userData.user);
+ 
 
   if (!userData.user) {
     return <div>Not logged in</div>;
@@ -42,14 +40,7 @@ function Profile() {
       </div>
     </div>
 
-    /* <div>
-      <form>
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Lösenord" />
-        <input type="button" value="Logga in" />
-      </form>
-    </div>
-    */
+   
   );
 }
 
