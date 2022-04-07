@@ -8,7 +8,6 @@ import { useSetRecoilState } from "recoil";
 import authState from "../recoil/auth/atom";
 
 function LoginPage() {
-  //login(username, "moominmama");
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -79,48 +78,7 @@ function LoginPage() {
 }
 export default LoginPage;
 
-/*
-function getUser (userId) {
-    axios.get(`https://k4backend.osuka.dev/user/userId${userId}`);
-    .then((res) => console.log(res.data));
 
-    // getUser ();
-}
-
-
-
-function register () {
-
-
-    axios.post('https://k4backend.osuka.dev/users',{
-        method:"POST",
-        body:JSON.stringify(
-            {
-                email:'John@gmail.com',
-                username:'johnd',
-                password:'m38rmF$',
-                role: "user",
-                name:{
-                    firstname:'John',
-                    lastname:'Doe'
-                },
-                address:{
-                    city:'kilcoole',
-                    street:'7835 new road',
-                    number:3,
-                    zipcode:'12926-3874'
-                },
-                phone:'1-570-236-7033'
-            }
-        )
-    })
-        .then(res) => res.data);
-        console.log(res.data);
-
-
-}
-
-*/
 
 // Skapa input för login med username och password
 // skapa 2st useState en för password och andra för username
