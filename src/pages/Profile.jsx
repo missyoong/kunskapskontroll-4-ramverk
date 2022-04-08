@@ -10,8 +10,6 @@ function Profile() {
   const userData = useRecoilValue(authState);
   const reset = useResetRecoilState(authState);
 
- 
-
   if (!userData.user) {
     return <div>Not logged in</div>;
   }
@@ -31,7 +29,6 @@ function Profile() {
             <h6 className="my-4">Street: {userData.user.address.street} </h6>
             <h6 className="my-4">City: {userData.user.address.city} </h6>
           </h6>
-
           <button onClick={() => reset()} className="btn btn-outline-secondary">
             Log Out
           </button>
