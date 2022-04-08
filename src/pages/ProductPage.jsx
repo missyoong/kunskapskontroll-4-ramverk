@@ -9,17 +9,13 @@ function ProductPage() {
   const [product, setProduct] = useRecoilState(productState);
   const [cart, setCart] = useRecoilState(cartState);
   const [cartBtn, setCartBtn] = useState("Add to Cart");
-
   const [amount, setAmount] = useState(0);
-
   const productid = useParams();
-
-  
   const productDetail2 = product.find((product) => product.id === productid.id);
 
   console.log(productDetail2);
 
-  
+ 
   const productDetail = product.filter((x) => x.id === parseInt(productid.id));
   console.log(product);
   console.log(productDetail);
@@ -48,8 +44,6 @@ function ProductPage() {
 
   console.log(cart);
 
- 
-
   return (
     <div className="container my-5 py-3">
       <div className="row">
@@ -71,7 +65,6 @@ function ProductPage() {
           >
             Add product
           </button>
-
           <input type="number" onChange={(e) => setAmount(e.target.value)} />
         </div>
       </div>
