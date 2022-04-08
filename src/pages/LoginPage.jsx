@@ -16,8 +16,6 @@ function LoginPage() {
   function login(username, password) {
     axios
       .post("https://k4backend.osuka.dev/auth/login", {
-        // method: "POST",
-        //body: JSON.stringify({
         username: username,
         password: password,
       })
@@ -31,7 +29,6 @@ function LoginPage() {
               user: userData.data,
               token: res.data.token,
             });
-            //navigate("/profile");
             navigate(userData.data.role === "user" ? "/profile" : "/admin");
           });
       });
