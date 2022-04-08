@@ -33,13 +33,10 @@ function Header() {
                 </NavLink>
               </li>
             </ul>
-
             <NavLink className="navbar-brand mx-auto fw-bold" to="/">
               Nikuu's store
             </NavLink>
-
             <RegisterBtn />
-
             <LoginBtn />
             <div></div>
             <CartBtn />
