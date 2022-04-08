@@ -10,8 +10,3 @@ const authState = atom({
 
   export default authState
 
-  /*
-  auth = store 
-  State = atom
-
-  */
