@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import { useSetRecoilState } from "recoil";
 
 function Register() {
-  //login(username, "moominmama");
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -18,25 +17,6 @@ function Register() {
   const [zipcode, setZipcode] = useState("");
   const [phone, setPhone] = useState("");
 
-  /* 
-   
-    {
-      email: email,
-      username: username,
-      password: password,
-      name:{
-          firstname:firstname,
-          lastname: lastname,
-      },
-      address:{
-          city:city,
-          street:street,
-          number:number,
-          zipcode:zipcode,
-      },
-      phone:phone,
-    }
-  */
   function register(newUserData) {
     fetch("https://k4backend.osuka.dev/users", {
       method: "POST",
